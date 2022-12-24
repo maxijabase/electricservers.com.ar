@@ -6,30 +6,7 @@
   import { fetchServers, serversStore } from '../stores/servers'
   import Server from './server.svelte'
 
-  const serverList: any[] = [
-    {
-      ip: '45.235.99.105',
-      port: 27034,
-    },
-    {
-      ip: '45.235.99.105',
-      port: 27038,
-    },
-    {
-      ip: '45.235.99.105',
-      port: 27039,
-    },
-    {
-      ip: '45.235.99.105',
-      port: 27040,
-    },
-    {
-      ip: '177.54.148.107',
-      port: 30050,
-    },
-  ]
-
-  fetchServers(serverList)
+  fetchServers()
 </script>
 
 <div class="overflow-hidden h-max skew-y-2 my-5">
